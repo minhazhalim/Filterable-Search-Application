@@ -17,6 +17,7 @@ const loadCharacters = async () => {
           console.log(error);
      }
 };
+loadCharacters();
 const displayCharacters = (characters) => {
      const htmlString = characters.map((character) => {
           return `
@@ -29,4 +30,3 @@ const displayCharacters = (characters) => {
      }).join('');
      characterList.innerHTML = htmlString;
 };
-loadCharacters();
